@@ -1,6 +1,7 @@
 
 import { Shield, Rocket, BarChart3, Users } from 'lucide-react';
 import { motion } from 'framer-motion';
+import { useIsMobile } from '@/hooks/use-mobile';
 
 interface FeatureProps {
   icon: React.ReactNode;
@@ -32,6 +33,8 @@ const Feature = ({ icon, title, description, delay }: FeatureProps) => {
 };
 
 const WhyUs = () => {
+  const isMobile = useIsMobile();
+  
   return (
     <section id="why-us" className="section-padding relative bg-deep-blue/40">
       <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-cyan/30 to-transparent"></div>
@@ -93,33 +96,33 @@ const WhyUs = () => {
             <div className="relative overflow-hidden rounded-2xl border border-white/10 shadow-xl">
               <div className="aspect-[4/3] bg-gradient-to-br from-[#0c1425] to-[#1a1033]">
                 <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="relative w-full h-full flex items-center justify-center p-6">
+                  <div className="relative w-full h-full flex items-center justify-center p-8">
                     {/* Abstract visualization */}
                     <div className="absolute w-[120%] h-[120%] bg-[radial-gradient(circle_at_center,rgba(3,169,244,0.15),transparent_70%)]"></div>
                     
                     <div className="relative z-10 flex flex-col items-center text-center">
-                      <div className="text-gradient text-3xl md:text-4xl font-bold mb-4">AI That Works</div>
-                      <p className="text-white/80 mb-6 max-w-md">
+                      <div className="text-gradient text-2xl sm:text-3xl md:text-4xl font-bold mb-3 sm:mb-4">AI That Works</div>
+                      <p className="text-white/80 mb-4 sm:mb-6 max-w-md text-sm sm:text-base">
                         Our agentic AI systems don't just demonstrate potential—they deliver
                         concrete results for your business from day one.
                       </p>
                       
-                      <div className="grid grid-cols-2 gap-4 w-full max-w-xs mb-2">
-                        <div className="glass-card p-3 text-center">
-                          <div className="text-2xl md:text-3xl font-bold text-gradient mb-1">40%</div>
-                          <div className="text-white/70 text-xs md:text-sm">Process Efficiency</div>
+                      <div className={`grid grid-cols-2 gap-2 sm:gap-4 w-full max-w-xs ${isMobile ? 'mb-4' : 'mb-2'}`}>
+                        <div className="glass-card p-2 sm:p-3 text-center">
+                          <div className="text-xl sm:text-2xl md:text-3xl font-bold text-gradient mb-1">40%</div>
+                          <div className="text-white/70 text-xs sm:text-sm">Process Efficiency</div>
                         </div>
-                        <div className="glass-card p-3 text-center">
-                          <div className="text-2xl md:text-3xl font-bold text-gradient mb-1">65%</div>
-                          <div className="text-white/70 text-xs md:text-sm">Cost Reduction</div>
+                        <div className="glass-card p-2 sm:p-3 text-center">
+                          <div className="text-xl sm:text-2xl md:text-3xl font-bold text-gradient mb-1">65%</div>
+                          <div className="text-white/70 text-xs sm:text-sm">Cost Reduction</div>
                         </div>
-                        <div className="glass-card p-3 text-center">
-                          <div className="text-2xl md:text-3xl font-bold text-gradient mb-1">90%</div>
-                          <div className="text-white/70 text-xs md:text-sm">Accuracy Rate</div>
+                        <div className="glass-card p-2 sm:p-3 text-center">
+                          <div className="text-xl sm:text-2xl md:text-3xl font-bold text-gradient mb-1">90%</div>
+                          <div className="text-white/70 text-xs sm:text-sm">Accuracy Rate</div>
                         </div>
-                        <div className="glass-card p-3 text-center">
-                          <div className="text-2xl md:text-3xl font-bold text-gradient mb-1">3x</div>
-                          <div className="text-white/70 text-xs md:text-sm">Faster Insights</div>
+                        <div className="glass-card p-2 sm:p-3 text-center">
+                          <div className="text-xl sm:text-2xl md:text-3xl font-bold text-gradient mb-1">3x</div>
+                          <div className="text-white/70 text-xs sm:text-sm">Faster Insights</div>
                         </div>
                       </div>
                     </div>
