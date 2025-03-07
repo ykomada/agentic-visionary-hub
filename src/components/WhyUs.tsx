@@ -93,33 +93,33 @@ const WhyUs = () => {
             <div className="relative overflow-hidden rounded-2xl border border-white/10 shadow-xl">
               <div className="aspect-[4/3] bg-gradient-to-br from-[#0c1425] to-[#1a1033]">
                 <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="relative w-full h-full flex items-center justify-center">
+                  <div className="relative w-full h-full flex items-center justify-center p-6">
                     {/* Abstract visualization */}
                     <div className="absolute w-[120%] h-[120%] bg-[radial-gradient(circle_at_center,rgba(3,169,244,0.15),transparent_70%)]"></div>
                     
-                    <div className="relative z-10 flex flex-col items-center text-center p-8">
-                      <div className="text-gradient text-4xl md:text-5xl font-bold mb-6">AI That Works</div>
-                      <p className="text-white/80 mb-8 max-w-md">
+                    <div className="relative z-10 flex flex-col items-center text-center">
+                      <div className="text-gradient text-3xl md:text-4xl font-bold mb-4">AI That Works</div>
+                      <p className="text-white/80 mb-6 max-w-md">
                         Our agentic AI systems don't just demonstrate potential—they deliver
                         concrete results for your business from day one.
                       </p>
                       
-                      <div className="grid grid-cols-2 gap-6 w-full max-w-sm">
-                        <div className="glass-card p-4 text-center">
-                          <div className="text-3xl font-bold text-gradient mb-2">40%</div>
-                          <div className="text-white/70 text-sm">Process Efficiency</div>
+                      <div className="grid grid-cols-2 gap-4 w-full max-w-xs mb-2">
+                        <div className="glass-card p-3 text-center">
+                          <div className="text-2xl md:text-3xl font-bold text-gradient mb-1">40%</div>
+                          <div className="text-white/70 text-xs md:text-sm">Process Efficiency</div>
                         </div>
-                        <div className="glass-card p-4 text-center">
-                          <div className="text-3xl font-bold text-gradient mb-2">65%</div>
-                          <div className="text-white/70 text-sm">Cost Reduction</div>
+                        <div className="glass-card p-3 text-center">
+                          <div className="text-2xl md:text-3xl font-bold text-gradient mb-1">65%</div>
+                          <div className="text-white/70 text-xs md:text-sm">Cost Reduction</div>
                         </div>
-                        <div className="glass-card p-4 text-center">
-                          <div className="text-3xl font-bold text-gradient mb-2">90%</div>
-                          <div className="text-white/70 text-sm">Accuracy Rate</div>
+                        <div className="glass-card p-3 text-center">
+                          <div className="text-2xl md:text-3xl font-bold text-gradient mb-1">90%</div>
+                          <div className="text-white/70 text-xs md:text-sm">Accuracy Rate</div>
                         </div>
-                        <div className="glass-card p-4 text-center">
-                          <div className="text-3xl font-bold text-gradient mb-2">3x</div>
-                          <div className="text-white/70 text-sm">Faster Insights</div>
+                        <div className="glass-card p-3 text-center">
+                          <div className="text-2xl md:text-3xl font-bold text-gradient mb-1">3x</div>
+                          <div className="text-white/70 text-xs md:text-sm">Faster Insights</div>
                         </div>
                       </div>
                     </div>
