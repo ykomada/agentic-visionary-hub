@@ -11,7 +11,7 @@ const Footer = () => {
       <div className="container max-w-7xl mx-auto">
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-6 md:mb-0">
-            <a href="#" className="text-2xl font-bold text-gradient">Visionary</a>
+            <a href="#" className="text-2xl font-bold text-gradient">Hyperbolic Labs</a>
             <p className="text-white/60 mt-2">Transforming businesses with agentic AI</p>
           </div>
           
@@ -32,7 +32,7 @@ const Footer = () => {
         
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="text-white/60 mb-4 md:mb-0">
-            &copy; {currentYear} Visionary AI. All rights reserved.
+            &copy; {currentYear} Hyperbolic Labs. All rights reserved.
           </div>
           
           <div className="flex space-x-8">
