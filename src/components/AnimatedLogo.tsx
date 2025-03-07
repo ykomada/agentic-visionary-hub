@@ -10,7 +10,7 @@ const AnimatedLogo = () => {
 
     // Initial setup - using the uploaded logo
     const logo = document.createElement('img');
-    logo.src = '/lovable-uploads/4e194ef0-927e-446c-83b5-7971e7aab0f5.png';
+    logo.src = '/lovable-uploads/ce6cc12c-85f0-4365-9228-cdc45531bfbb.png';
     logo.className = 'w-full h-full object-contain opacity-0 transition-opacity duration-1000';
     logo.onload = () => {
       logo.classList.remove('opacity-0');
